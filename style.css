@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color:white;
+    background: #333;
+}
+.container {
+    display: flex;
+}
+.temperature {
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+    justify-content:flex-end;
+    
+    width: 500px;
+    margin-left: 650px;
+    margin-top: -70px;
+}
+#tempreature-discription {
+    font-size: 1.2rem;
+    margin-right: 2rem; 
+}
+.degree-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.degree-section  span {
+    font-size: 3rem;
+    cursor: pointer;
+}
+#degree {
+    font-size: 3rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+.search,#search-input {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+#search-input {
+  
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;  
+}
+.showImage {
+    height: 240px;
+    background: url('./img/kalid1.JPG') no-repeat center center /cover;
+    width: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#time {
+    font-size: 10rem ;
+}
+
+h2 {
+    opacity: 0.6;;
+}
+@media(max-width: 700px) {
+    #time {
+        font-size: 6rem;
+    }
+    .temperature {
+        height: 50px;
+        width: 20px;
+        font-size:0.75rem;
+        margin-top: 2rem;
+        margin-right: 8rem; 
+    }
+    .temperature .container .icon {
+        height: 70px;
+        width: 70px;
+    }
+    .temperature .container .degree-section #degree {
+        font-size: 1.5rem;
+    }
+    .temperature .container .degree-section span {
+        font-size: 1.5rem;
+
+    }
+    .temperature #tempreature-discription {
+        font-size: 1rem;  
+    }
+
+}
